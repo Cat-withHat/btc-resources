@@ -2508,7 +2508,8 @@ a.label:hover,a.label:focus {
   display: block;
 }
 
-#article-feed-list .article-author-avatar {
+#article-feed-list .article-author-avatar,
+#frontpage-article-list .article-author-avatar {
   width: 36px;
   height: 36px;
   border-radius: 50%;

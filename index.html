@@ -61,6 +61,18 @@
 			</div>
 		</div>
 
+		<section id="frontpage-articles-section" class="hidden" data-article-limit="3">
+			<div class="container">
+				<div class="row">
+					<div class="text-left col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-xs-10 col-lg-10 col-md-10 col-sm-10">
+						<div id="frontpage-article-list"></div>
+						<p>Promoted from the Bitcoin Discord article forum.</p>
+						<p>Showing <span id="frontpage-article-count">0</span> article(s). <a href="{{TemplateEngine.settings.SUBDIRECTORY}}/articles.html">View all articles</a>.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
 
 		<div id="footer">
 			{{loadtemplate footer.html at footer}}
@@ -68,5 +80,7 @@
 
 		<script type="text/javascript" src="js/regex_template_engine.js"></script>
 		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/article-utils.js"></script>
+		<script type="text/javascript" src="js/frontpage-articles-loader.js" defer></script>
 	</body>
 </html>

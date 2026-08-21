@@ -881,7 +881,8 @@ input[type=checkbox] + label:hover {
 
 /* Article content rendering */
 #article-body .article-content-image,
-#article-feed-list .article-content-image {
+#article-feed-list .article-content-image,
+#frontpage-article-list .article-content-image {
   display: block;
   max-width: 100%;
   width: auto;
@@ -891,12 +892,14 @@ input[type=checkbox] + label:hover {
 }
 
 #article-body .article-figure,
-#article-feed-list .article-figure {
+#article-feed-list .article-figure,
+#frontpage-article-list .article-figure {
   margin: 18px 0;
 }
 
 #article-body .article-figure figcaption,
-#article-feed-list .article-figure figcaption {
+#article-feed-list .article-figure figcaption,
+#frontpage-article-list .article-figure figcaption {
   margin-top: 6px;
   font-size: 12px;
   line-height: 1.4;
@@ -904,7 +907,8 @@ input[type=checkbox] + label:hover {
 }
 
 #article-body blockquote.article-blockquote,
-#article-feed-list blockquote.article-blockquote {
+#article-feed-list blockquote.article-blockquote,
+#frontpage-article-list blockquote.article-blockquote {
   margin: 18px 0;
   padding: 12px 16px;
   border-left: 4px solid #CC4C00;
@@ -913,6 +917,7 @@ input[type=checkbox] + label:hover {
 }
 
 #article-body blockquote.article-blockquote > :last-child,
-#article-feed-list blockquote.article-blockquote > :last-child {
+#article-feed-list blockquote.article-blockquote > :last-child,
+#frontpage-article-list blockquote.article-blockquote > :last-child {
   margin-bottom: 0;
 }
