@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-08T16:09:16.232351+00:00",
+  "generatedAt": "2026-08-21T15:28:32.321920+00:00",
   "entries": {
     "f:/software/source/repos/btc-resources/bitcoin-information/security.html": {
       "ok": true,
@@ -8044,15 +8044,6 @@
       "sourceKind": "remote_html",
       "fetchedAt": "2026-03-06T05:01:35.870485+00:00"
     },
-    "https://blog.coinkite.com/": {
-      "ok": false,
-      "error": "http_403",
-      "summary": "",
-      "keywords": [],
-      "title": "",
-      "sourceKind": "remote",
-      "fetchedAt": "2026-03-06T05:01:35.899409+00:00"
-    },
     "https://blog.lopp.net/": {
       "ok": true,
       "summary": "Jameson Lopp's thoughts on Bitcoin, Privacy, and Freedom.",
@@ -12721,25 +12712,6 @@
       "title": "GitHub - benthecarman/PSBT-Toolkit · GitHub",
       "sourceKind": "remote_html",
       "fetchedAt": "2026-03-06T05:01:57.626656+00:00"
-    },
-    "https://github.com/Coldcard/psbt_faker": {
-      "ok": true,
-      "summary": "Create test PSBT files which are valid, but garbage values - Coldcard/psbt_faker",
-      "keywords": [
-        "psbt",
-        "coldcard",
-        "faker",
-        "create",
-        "test",
-        "files",
-        "valid",
-        "garbage",
-        "values",
-        "github"
-      ],
-      "title": "GitHub - Coldcard/psbt_faker: Create test PSBT files which are valid, but garbage values · GitHub",
-      "sourceKind": "remote_html",
-      "fetchedAt": "2026-03-06T05:01:57.680540+00:00"
     },
     "https://github.com/peter-conalgo/psbt_dump": {
       "ok": true,
@@ -24820,15 +24792,6 @@
       "sourceKind": "remote",
       "fetchedAt": "2026-03-06T05:02:53.549958+00:00"
     },
-    "https://store.coinkite.com/store": {
-      "ok": false,
-      "error": "http_403",
-      "summary": "",
-      "keywords": [],
-      "title": "",
-      "sourceKind": "remote",
-      "fetchedAt": "2026-03-06T05:02:53.612519+00:00"
-    },
     "https://esimsdata.com/": {
       "ok": true,
       "summary": "Buy online Data Plans for Your Travel - eSimsData. Good Price✅ local | regional | global eSIM✅ Cover 180+ countries✅ Provider - eSimsData",
@@ -25607,17 +25570,16 @@
     },
     "https://seedxor.com/": {
       "ok": true,
-      "summary": "Bitcoin Seed XOR is a simple way of securing seeds with your COLDCARD.",
+      "summary": "Bitcoin Seed XOR is a simple seed splitting method.",
       "keywords": [
         "seed",
         "xor",
         "simple",
         "way",
         "securing",
-        "seeds",
-        "coldcard"
+        "seeds"
       ],
-      "title": "Bitcoin Seed XOR - A simple way of securing seeds with your COLDCARD",
+      "title": "Bitcoin Seed XOR",
       "sourceKind": "remote_html",
       "fetchedAt": "2026-03-06T05:02:56.321193+00:00"
     },
@@ -30296,6 +30258,508 @@
       "title": "",
       "sourceKind": "remote",
       "fetchedAt": "2026-03-08T16:09:15.961789+00:00"
+    },
+    "https://bitlist.co/": {
+      "ok": true,
+      "summary": "BitcoinTalk Search Archive",
+      "keywords": [
+        "bitcointalk",
+        "search",
+        "archive"
+      ],
+      "title": "BitcoinTalk Search Archive",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:20:28.8801077Z"
+    },
+    "https://bnoc.xyz/": {
+      "ok": true,
+      "summary": "Bitcoin Network Operations Collective",
+      "keywords": [
+        "network",
+        "operations",
+        "collective"
+      ],
+      "title": "Bitcoin Network Operations Collective",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:20:28.8801077Z"
+    },
+    "https://satoshidashboard.com/": {
+      "ok": true,
+      "summary": "Satoshi Dashboard",
+      "keywords": [
+        "satoshi",
+        "dashboard"
+      ],
+      "title": "Satoshi Dashboard",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:20:28.8801077Z"
+    },
+    "http://satoshitimeline.com/": {
+      "ok": true,
+      "summary": "SatoshiTimeline.com - A visual chronological map of Satoshi's activity",
+      "keywords": [
+        "satoshi",
+        "timeline",
+        "visual",
+        "chronological",
+        "map",
+        "activity"
+      ],
+      "title": "SatoshiTimeline.com",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:20:28.8801077Z"
+    },
+    "https://engineering.block.xyz/blog/predictable-rng-fallback-and-32-bit-reseed-in-coldcard-firmware": {
+      "ok": true,
+      "summary": "Block Engineering report on predictable RNG fallback and 32-bit reseed behavior in Coldcard firmware, including affected firmware ranges and fund-loss risk.",
+      "keywords": [
+        "coldcard",
+        "entropy",
+        "rng",
+        "firmware",
+        "wallet failure",
+        "hardware wallet",
+        "key generation"
+      ],
+      "title": "Coldcard Entropy Failure",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://blog.bitbox.swiss/en/bitbox-08-2026-dixence-update": {
+      "ok": true,
+      "summary": "BitBox 08.2026 Dixence update covering severe firmware vulnerabilities, bootloader protections, memory corruption fixes, and silent-payment remediation.",
+      "keywords": [
+        "bitbox",
+        "dixence",
+        "firmware",
+        "bootloader",
+        "memory corruption",
+        "wallet failure",
+        "hardware wallet"
+      ],
+      "title": "BitBox Dixence Security Update",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://protos.com/chinese-chip-used-in-bitcoin-wallets-is-putting-traders-at-risk": {
+      "ok": true,
+      "summary": "Coverage of ESP32 hidden HCI command concerns and claimed relevance to Blockstream Jade hardware wallets.",
+      "keywords": [
+        "jade",
+        "esp32",
+        "blockstream",
+        "hardware wallet",
+        "vulnerability",
+        "cve-2025-27840"
+      ],
+      "title": "Jade ESP32 Critical Vulnerability",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://nvd.nist.gov/vuln/detail/CVE-2025-27840": {
+      "ok": true,
+      "summary": "NVD entry for CVE-2025-27840, describing hidden ESP32 HCI commands that can write memory under privileged physical-access conditions.",
+      "keywords": [
+        "cve-2025-27840",
+        "esp32",
+        "hci",
+        "nvd",
+        "cve",
+        "hardware wallet"
+      ],
+      "title": "CVE-2025-27840",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://blog.blockstream.com/jade-security-disclosure": {
+      "ok": true,
+      "summary": "Blockstream disclosure for a Jade firmware vulnerability affecting register_descriptor RPC handling, fixed in later firmware.",
+      "keywords": [
+        "jade",
+        "blockstream",
+        "security disclosure",
+        "firmware",
+        "hardware wallet",
+        "wallet failure"
+      ],
+      "title": "Jade Security Disclosure",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://electrum.readthedocs.io/en/latest/security_issues/sec_201801.html": {
+      "ok": true,
+      "summary": "Electrum advisory for the 2018 JSONRPC vulnerability that allowed malicious websites to issue wallet commands against local Electrum instances.",
+      "keywords": [
+        "electrum",
+        "jsonrpc",
+        "wallet theft",
+        "local web attack",
+        "cve-2018-1000022"
+      ],
+      "title": "Electrum JSONRPC Local Web Attack",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://nvd.nist.gov/vuln/detail/CVE-2018-1000022": {
+      "ok": true,
+      "summary": "NVD entry for Electrum JSONRPC authorization failure that could allow Bitcoin theft from unprotected wallets.",
+      "keywords": [
+        "cve-2018-1000022",
+        "electrum",
+        "jsonrpc",
+        "nvd",
+        "cve",
+        "wallet theft"
+      ],
+      "title": "CVE-2018-1000022",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://milksad.info/": {
+      "ok": true,
+      "summary": "Milk Sad disclosure for weak entropy in Libbitcoin Explorer bx seed output, linked to recovered private keys and thefts.",
+      "keywords": [
+        "milk sad",
+        "libbitcoin explorer",
+        "weak entropy",
+        "wallet failure",
+        "cve-2023-39910"
+      ],
+      "title": "Milk Sad: Libbitcoin Explorer Weak Entropy",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://nvd.nist.gov/vuln/detail/CVE-2023-39910": {
+      "ok": true,
+      "summary": "NVD entry for Libbitcoin Explorer weak entropy in bx seed, exploitable for private-key recovery.",
+      "keywords": [
+        "cve-2023-39910",
+        "libbitcoin explorer",
+        "bx seed",
+        "nvd",
+        "cve",
+        "weak entropy"
+      ],
+      "title": "CVE-2023-39910",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://www.ledger.com/blog/funds-of-every-wallet-created-with-the-trust-wallet-browser-extension-could-have-been-stolen": {
+      "ok": true,
+      "summary": "Ledger Donjon writeup on weak entropy in Trust Wallet browser extension wallets, which made extension-created wallets recoverable by attackers.",
+      "keywords": [
+        "trust wallet",
+        "browser extension",
+        "weak entropy",
+        "ledger donjon",
+        "wallet failure",
+        "cve-2023-31290"
+      ],
+      "title": "Trust Wallet Browser Extension Entropy Failure",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://nvd.nist.gov/vuln/detail/CVE-2023-31290": {
+      "ok": true,
+      "summary": "NVD entry for Trust Wallet browser extension 32-bit entropy vulnerability affecting private-key generation.",
+      "keywords": [
+        "cve-2023-31290",
+        "trust wallet",
+        "entropy",
+        "nvd",
+        "cve",
+        "wallet theft"
+      ],
+      "title": "CVE-2023-31290",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://www.ledger.com/blog/security-incident-report": {
+      "ok": true,
+      "summary": "Ledger incident report for the December 2023 Connect Kit supply-chain exploit involving malicious NPM package versions and wallet-draining dApp interactions.",
+      "keywords": [
+        "ledger",
+        "connect kit",
+        "supply chain",
+        "npm",
+        "wallet drain",
+        "security incident"
+      ],
+      "title": "Ledger Connect Kit Supply Chain Exploit",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://www.ledger.com/blog/unfixable-key-extraction-attack-on-trezor": {
+      "ok": true,
+      "summary": "Ledger Donjon research on physical seed extraction affecting Trezor and KeepKey-style hardware wallet designs.",
+      "keywords": [
+        "trezor",
+        "keepkey",
+        "physical attack",
+        "seed extraction",
+        "hardware wallet",
+        "wallet failure"
+      ],
+      "title": "Trezor and KeepKey Physical Seed Extraction",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://blog.kraken.com/product/security/kraken-identifies-critical-flaw-in-trezor-hardware-wallets": {
+      "ok": true,
+      "summary": "Kraken Security Labs disclosure describing seed extraction from Trezor hardware wallets using physical access and voltage glitching.",
+      "keywords": [
+        "kraken",
+        "trezor",
+        "voltage glitching",
+        "physical attack",
+        "seed extraction",
+        "hardware wallet"
+      ],
+      "title": "Kraken Trezor Hardware Wallet Flaw",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://trezor.io/vulnerability/fix-side-channel-in-bip-39-mnemonic-processing-when-unlocked": {
+      "ok": true,
+      "summary": "Trezor advisory for a BIP-39 mnemonic-processing side channel when a device is physically possessed and unlocked.",
+      "keywords": [
+        "trezor",
+        "bip-39",
+        "side channel",
+        "mnemonic",
+        "hardware wallet",
+        "cve-2025-69893"
+      ],
+      "title": "Trezor BIP-39 Mnemonic Processing Side Channel",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://nvd.nist.gov/vuln/detail/CVE-2025-69893": {
+      "ok": true,
+      "summary": "NVD entry for the Trezor BIP-39 mnemonic processing side-channel vulnerability.",
+      "keywords": [
+        "cve-2025-69893",
+        "trezor",
+        "bip-39",
+        "side channel",
+        "nvd",
+        "cve"
+      ],
+      "title": "CVE-2025-69893",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://www.theblock.co/news/business/2023-02-10-security-firm-unciphered-hacked-into-popular-hardware-wallet-onekey-210665": {
+      "ok": true,
+      "summary": "Report on Unciphered extracting a OneKey hardware-wallet seed through a physical man-in-the-middle attack path later patched by OneKey.",
+      "keywords": [
+        "onekey",
+        "physical attack",
+        "mitm",
+        "seed extraction",
+        "hardware wallet",
+        "cve-2023-25758"
+      ],
+      "title": "OneKey Physical MITM Seed Extraction",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://nvd.nist.gov/vuln/detail/CVE-2023-25758": {
+      "ok": true,
+      "summary": "NVD entry for OneKey Touch and OneKey Mini physical MITM seed phrase exposure.",
+      "keywords": [
+        "cve-2023-25758",
+        "onekey",
+        "seed phrase",
+        "physical attack",
+        "nvd",
+        "cve"
+      ],
+      "title": "CVE-2023-25758",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://www.unciphered.com/disclosure-of-vulnerable-bitcoin-wallet-library-2": {
+      "ok": true,
+      "summary": "Unciphered Randstorm disclosure covering weak RNG in early BitcoinJS and derivative browser wallets generated roughly between 2011 and 2015.",
+      "keywords": [
+        "randstorm",
+        "bitcoinjs",
+        "jsbn",
+        "weak rng",
+        "browser wallet",
+        "wallet failure"
+      ],
+      "title": "Randstorm Early BitcoinJS Browser Wallet RNG Failure",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://www.ledger.com/addressing-the-july-2020-e-commerce-and-marketing-data-breach": {
+      "ok": true,
+      "summary": "Ledger disclosure of its July 2020 e-commerce and marketing database breach involving email addresses and a subset of contact and order details.",
+      "keywords": [
+        "ledger",
+        "data breach",
+        "privacy leak",
+        "e-commerce",
+        "customer data",
+        "hardware wallet seller"
+      ],
+      "title": "Ledger July 2020 E-commerce and Marketing Data Breach",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://www.ledger.com/blog/update-efforts-to-protect-your-data-and-prosecute-the-scammers": {
+      "ok": true,
+      "summary": "Ledger update covering the public dump of 2020 customer data and the Shopify-related customer transactional records exposure.",
+      "keywords": [
+        "ledger",
+        "shopify",
+        "data breach",
+        "privacy leak",
+        "customer data",
+        "hardware wallet seller"
+      ],
+      "title": "Ledger Shopify Data Theft Update",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://www.theregister.com/security/2026/01/06/ledger-confirms-customer-data-lifted-after-global-e-snafu/2443622": {
+      "ok": true,
+      "summary": "The Register coverage of Ledger customers affected by a Global-e e-commerce partner breach exposing order and contact details.",
+      "keywords": [
+        "ledger",
+        "global-e",
+        "data breach",
+        "privacy leak",
+        "customer data",
+        "hardware wallet seller"
+      ],
+      "title": "Ledger Global-e Customer Data Exposure",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://blog.trezor.io/details-of-the-mailchimp-data-breach-a06872caa1fd": {
+      "ok": true,
+      "summary": "Trezor report on the 2022 Mailchimp breach affecting newsletter audience data and enabling phishing against wallet users.",
+      "keywords": [
+        "trezor",
+        "mailchimp",
+        "data breach",
+        "privacy leak",
+        "phishing",
+        "hardware wallet seller"
+      ],
+      "title": "Trezor Mailchimp Data Breach",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://mailchimp.com/newsroom/march-2022-security-incident": {
+      "ok": true,
+      "summary": "Mailchimp disclosure of a March 2022 social-engineering incident where audience data from cryptocurrency and finance customers was exported.",
+      "keywords": [
+        "mailchimp",
+        "data breach",
+        "crypto",
+        "finance",
+        "phishing",
+        "newsletter"
+      ],
+      "title": "Mailchimp March 2022 Security Incident",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://blog.trezor.io/trezor-security-update-stay-vigilant-against-potential-phishing-attack-bb05015a21f8": {
+      "ok": true,
+      "summary": "Trezor January 2024 disclosure of unauthorized access to a third-party support portal exposing names or nicknames and email addresses for some support contacts.",
+      "keywords": [
+        "trezor",
+        "support portal",
+        "data breach",
+        "privacy leak",
+        "phishing",
+        "hardware wallet seller"
+      ],
+      "title": "Trezor Support Portal Data Exposure",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://trezor.io/blog/news/recent-customer-data-exposed-in-shipping-provider-incident": {
+      "ok": true,
+      "summary": "Trezor August 2026 disclosure of a ShipMonk shipping-provider breach exposing customer order data including names, email addresses, phone numbers, and shipping addresses.",
+      "keywords": [
+        "trezor",
+        "shipmonk",
+        "data breach",
+        "privacy leak",
+        "shipping address",
+        "hardware wallet seller"
+      ],
+      "title": "Trezor ShipMonk Customer Data Exposure",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://databreaches.net/2016/12/31/keepkey-notifies-customers-of-security-incident-offers-30-btc-reward-for-tips-leading-to-attackers-arrest": {
+      "ok": true,
+      "summary": "DataBreaches.net coverage of KeepKey disclosure that an email and phone compromise briefly exposed vendor, sales, and marketing systems containing customer addresses, emails, and phone numbers.",
+      "keywords": [
+        "keepkey",
+        "data breach",
+        "privacy leak",
+        "customer data",
+        "hardware wallet seller",
+        "phishing"
+      ],
+      "title": "KeepKey Email and Vendor Access Breach",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T04:54:08.013Z"
+    },
+    "https://illbloom.org/": {
+      "ok": true,
+      "summary": "Coinspect Ill Bloom research site covering CVE-2026-71851, a CryptoJS weak randomness issue that exposed recovery phrases generated by affected software wallets.",
+      "keywords": [
+        "ill bloom",
+        "cryptojs",
+        "weak rng",
+        "weak entropy",
+        "wallet generation",
+        "recovery phrase",
+        "cve-2026-71851"
+      ],
+      "title": "Ill Bloom CryptoJS Weak RNG Wallet Generation",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T13:50:59.748Z"
+    },
+    "https://github.com/advisories/GHSA-rg76-677x-56q9": {
+      "ok": true,
+      "summary": "GitHub Advisory for CVE-2026-71851: CryptoJS WordArray.random insufficient entropy in cryptographic secret generation via vulnerable dependency chains.",
+      "keywords": [
+        "cve-2026-71851",
+        "ghsa-rg76-677x-56q9",
+        "cryptojs",
+        "wordarray.random",
+        "weak entropy",
+        "github advisory"
+      ],
+      "title": "CVE-2026-71851",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T13:50:59.748Z"
+    },
+    "https://donjon.ledger.com/lsb/014": {
+      "ok": true,
+      "summary": "Ledger Security Bulletin 014: path derivation was too permissive in Bitcoin derivative apps, allowing Bitcoin-derived apps to derive public keys or sign Bitcoin transactions.",
+      "keywords": [
+        "ledger",
+        "lsb 014",
+        "app isolation",
+        "path derivation",
+        "bitcoin derivative apps",
+        "hardware wallet",
+        "wallet failure"
+      ],
+      "title": "Ledger Bitcoin Derivative App Isolation Bypass",
+      "sourceKind": "manual_remote",
+      "fetchedAt": "2026-08-21T13:50:59.748Z"
     }
   }
 }

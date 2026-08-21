@@ -57,7 +57,7 @@
 
   function syncFetchJson(url) {
     var request = new XMLHttpRequest();
-    request.open("GET", url + (url.indexOf("?") === -1 ? "?" : "&") + "_ts=" + Date.now(), false);
+    request.open("GET", url, false);
     request.send(null);
 
     if (request.status < 200 || request.status >= 300) {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-07T17:44:27Z",
+  "generatedAt": "2026-08-21T15:28:55Z",
   "sections": {
     "bitcoin.html": {
       "getting started": "getting_started",
@@ -182,6 +182,7 @@
     "bitcoin-information/history.html": {
       "the history of bitcoin": "history",
       "logs & transcripts": "logs",
+      "historic wallet failures": "historic_wallet_failures",
       "satoshi nakamoto": "satoshi",
       "security incidents": "security",
       "books": "books",
@@ -251,9 +252,10 @@
       "wallet basics": "wallets",
       "recommended wallets": "recommended_wallets",
       "wallet backups": "backups",
+      "wallet recovery": "recovery",
       "key storage hardware": "hardware",
       "guides": "guides",
-      "wallet recovery": "recovery"
+      "historic wallet failures": "historic_wallet_failures"
     },
     "bitcoin-information/security.html": {
       "general security": "general",
