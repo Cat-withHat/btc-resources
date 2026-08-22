@@ -38,8 +38,16 @@
     return JSON.parse(request.responseText);
   }
 
+  function isArticleManifestEntry(value) {
+    return !!value
+      && typeof value === "object"
+      && !Array.isArray(value)
+      && typeof value.filename === "string"
+      && typeof value.timestamp === "string";
+  }
+
   function normalizeManifestEntries(manifest) {
-    if (!manifest || typeof manifest !== "object" || !manifest.articles || typeof manifest.articles !== "object") {
+    if (!manifest || typeof manifest !== "object" || !manifest.articles || typeof manifest.articles !== "object" || Array.isArray(manifest.articles)) {
       return [];
     }
 
@@ -50,7 +58,7 @@
       }
 
       var item = manifest.articles[id];
-      if (!item || typeof item !== "object") {
+      if (!isArticleManifestEntry(item)) {
         continue;
       }
 

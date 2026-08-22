@@ -110,72 +110,53 @@
     return normalized;
   }
 
-  function deriveArticleId(fallbackId, filename) {
-    var id = normalizeSpace(fallbackId || "");
-    if (id) {
-      return id;
-    }
-
-    var cleanFile = normalizeSpace(filename || "").replace(/\\/g, "/");
-    if (!cleanFile) {
-      return "";
-    }
-
-    var fileName = cleanFile.split("/").pop() || "";
-    return normalizeSpace(fileName.replace(/\.json$/i, ""));
+  function isArticleManifestEntry(value) {
+    return !!value
+      && typeof value === "object"
+      && !Array.isArray(value)
+      && typeof value.filename === "string"
+      && typeof value.timestamp === "string"
+      && typeof value.title === "string"
+      && typeof value.author === "string"
+      && typeof value.line1 === "string"
+      && typeof value.line2 === "string"
+      && typeof value.forum_post_url === "string"
+      && Array.isArray(value.tags);
   }
 
   function normalizeManifestEntries(manifest) {
+    if (!manifest || typeof manifest !== "object" || !manifest.articles || typeof manifest.articles !== "object" || Array.isArray(manifest.articles)) {
+      return [];
+    }
+
     var entries = [];
-    var source = manifest && manifest.articles;
-
-    if (!source || typeof source !== "object") {
-      return entries;
-    }
-
-    if (Array.isArray(source)) {
-      source.forEach(function (item) {
-        if (!item || typeof item !== "object") {
-          return;
-        }
-
-        var id = deriveArticleId(item.id, item.filename);
-        if (!id) {
-          return;
-        }
-
-        entries.push({
-          id: id,
-          title: normalizeSpace(item.title || ""),
-          author: normalizeSpace(item.author || ""),
-          line1: normalizeSpace(item.line1 || ""),
-          line2: normalizeSpace(item.line2 || ""),
-          tags: normalizeStringArray(item.tags)
-        });
-      });
-      return entries;
-    }
-
-    Object.keys(source).forEach(function (idKey) {
-      var item = source[idKey];
-      if (!item || typeof item !== "object") {
-        return;
+    for (var id in manifest.articles) {
+      if (!Object.prototype.hasOwnProperty.call(manifest.articles, id)) {
+        continue;
       }
 
-      var id = deriveArticleId(idKey, item.filename);
-      if (!id) {
-        return;
+      var item = manifest.articles[id];
+      if (!isArticleManifestEntry(item)) {
+        continue;
+      }
+
+      var filename = normalizeSpace(item.filename || "");
+      if (!id || !filename) {
+        continue;
       }
 
       entries.push({
-        id: id,
+        id: normalizeSpace(id),
+        filename: filename,
+        timestamp: normalizeSpace(item.timestamp || ""),
         title: normalizeSpace(item.title || ""),
         author: normalizeSpace(item.author || ""),
         line1: normalizeSpace(item.line1 || ""),
         line2: normalizeSpace(item.line2 || ""),
+        forum_post_url: normalizeSpace(item.forum_post_url || ""),
         tags: normalizeStringArray(item.tags)
       });
-    });
+    }
 
     return entries;
   }
@@ -187,15 +168,11 @@
     var tags = normalizeStringArray(entry.tags);
     var summary = normalizeSpace((line1 + " " + line2).trim());
 
-    if (!tags.length) {
-      tags = normalizeStringArray([title, entry.id, entry.author]);
-    }
-
     return {
       name: title || ("Article " + entry.id),
-      page: title || ("Article " + entry.id),
-      categoryHeader: normalizeSpace(entry.author || ""),
-      category: line1,
+      page: ARTICLE_LIST_PAGE,
+      categoryHeader: "Articles",
+      category: normalizeSpace(entry.author || ""),
       url: "/article.html?id=" + encodeURIComponent(entry.id || ""),
       tags: tags.slice(),
       content: line2,
@@ -301,16 +278,25 @@
     return true;
   }
 
+  function isResourceIndexEntry(resource) {
+    return !!resource
+      && typeof resource === "object"
+      && !Array.isArray(resource)
+      && typeof resource.name === "string"
+      && typeof resource.page === "string"
+      && typeof resource.categoryHeader === "string"
+      && typeof resource.category === "string"
+      && typeof resource.url === "string"
+      && Array.isArray(resource.tags)
+      && typeof resource.content === "string";
+  }
+
   function prepResources(data) {
-    var resources = [];
-    if (Array.isArray(data)) {
-      resources = data;
-    } else if (data && Array.isArray(data.resources)) {
-      resources = data.resources;
-    }
+    var resources = (data && typeof data === "object" && Array.isArray(data.resources)) ? data.resources : [];
+    resources = resources.filter(isResourceIndexEntry);
 
     resources.forEach(function (resource) {
-      var tags = Array.isArray(resource.tags) ? resource.tags : [];
+      var tags = resource.tags;
       var externalKeywords = Array.isArray(resource.externalKeywords) ? resource.externalKeywords : [];
       resource.tags = tags;
       resource.externalKeywords = externalKeywords;
@@ -338,10 +324,10 @@
     return resources;
   }
   function prepSectionIndex(data) {
-    var source = (data && data.sections && typeof data.sections === "object") ? data.sections : data;
+    var source = (data && typeof data === "object" && data.sections && typeof data.sections === "object" && !Array.isArray(data.sections)) ? data.sections : null;
     var normalizedIndex = {};
 
-    if (!source || typeof source !== "object") {
+    if (!source) {
       return normalizedIndex;
     }
 
@@ -870,11 +856,5 @@
     bootstrap();
   }
 })();
-
-
-
-
-
-
 
 
